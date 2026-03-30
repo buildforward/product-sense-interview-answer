@@ -6,11 +6,14 @@ It turns open-ended prompts like "Design a product for X" or "How would you impr
 
 ## What This Skill Does
 
-- Answers product sense / product design interview prompts end to end
-- Produces a spoken-register response instead of raw notes
-- Forces a consistent structure so answers are easier to deliver live
-- Emphasizes market rationale, segmentation, pain points, and solution tradeoffs
-- Uses explicit prioritization criteria instead of vague brainstorming
+For a given product design question, the skill generates answers in 6 sections. Each section follow strong PM interview structure with prioritization logic built-in, so the final answer sounds like an polished interview response.
+
+1. Clarification - 2 min
+2. Strategic rationale - 5 min
+3. Product Goal - 2 min
+4. Market Segmentation - 5 min
+5. Pain Points - 10 min
+6. Solutions - 15 min
 
 ## Example Prompt
 
@@ -20,23 +23,11 @@ It turns open-ended prompts like "Design a product for X" or "How would you impr
 - "Build a feature for Instagram creators"
 - "Help me answer this PM interview question"
 
-## Output Structure
-
-The skill generates answers in 6 timed sections:
-
-1. Clarify
-2. Rationale
-3. Product Goal
-4. Market Segmentation
-5. Pain Points
-6. Solution
-
-Each section has rules for pacing, content, and phrasing so the final answer sounds like an actual interview response rather than a messy framework dump.
-
 ## What Makes It Different
 
+- Strong PM structure: balances user insight with business and strategic reasoning
+- Prioritization built in: forces explicit tradeoffs on reach, impact, fit, frequency, severity, and effort
+- MECE lists: reduces overlap across segments, pain points, and solutions
 - Spoken-answer oriented: optimized for saying the answer out loud
 - Fixed transitions: creates cleaner delivery under interview pressure
-- MECE lists: reduces overlap across segments, pain points, and solutions
-- Prioritization built in: forces explicit tradeoffs on reach, impact, fit, frequency, severity, and effort
-- Strong PM structure: balances user insight with business and strategic reasoning
+
