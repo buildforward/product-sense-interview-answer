@@ -1,6 +1,6 @@
 # Product Sense Interview
 
-A skill for answering PM product sense and product design interview questions in a structured, interview-ready format.
+A skill for answering PM product sense and product design interview questions in a structured, interview-ready format. Summarized after spending thousands of dollars in PM mock interviews and hundreds of mock questions.
 
 It turns open-ended prompts like "Design a product for X" or "How would you improve X?" into a complete spoken-response script with a consistent 6-section flow, fixed transitions, prioritization logic, and clear MVP framing.
 
@@ -12,9 +12,7 @@ It turns open-ended prompts like "Design a product for X" or "How would you impr
 - Emphasizes market rationale, segmentation, pain points, and solution tradeoffs
 - Uses explicit prioritization criteria instead of vague brainstorming
 
-## Best For
-
-Use this skill for prompts such as:
+## Example Prompt
 
 - "Design a product for travelers with flight anxiety"
 - "How would you improve Spotify for college students?"
@@ -42,35 +40,3 @@ Each section has rules for pacing, content, and phrasing so the final answer sou
 - MECE lists: reduces overlap across segments, pain points, and solutions
 - Prioritization built in: forces explicit tradeoffs on reach, impact, fit, frequency, severity, and effort
 - Strong PM structure: balances user insight with business and strategic reasoning
-
-## Example Prompt
-
-```text
-Use $product-sense-interview to answer: How would you improve LinkedIn for new college graduates?
-```
-
-## Install In Codex
-
-If this repo is published on GitHub, install the skill with:
-
-```bash
-python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo <your-github-username>/product-sense-interview-repo \
-  --path product-sense-interview
-```
-
-After installing, restart Codex to pick up the new skill.
-
-## Repo Layout
-
-```text
-product-sense-interview/
-  README.md
-  SKILL.md
-```
-
-## Good To Know
-
-- This skill is designed for product sense / product design style questions, not behavioral interviews.
-- It is best when you want a polished, interview-ready answer rather than a loose brainstorming outline.
-- You can customize the tone, phrasing, or evaluation criteria by editing `SKILL.md`.
