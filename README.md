@@ -1,6 +1,6 @@
 # Product Sense Interview
 
-A skill for answering PM product sense and product design interview questions in a structured, interview-ready format. Summarized after spending thousands of dollars in PM mock interviews and hundreds of mock questions.
+A skill for answering PM product sense and product design interview questions in a structured, interview-ready format. Summarized after spending $$$ thousands of dollars in PM mock interviews and hundreds of mock questions.
 
 It turns open-ended prompts like "Design a product for X" or "How would you improve X?" into a complete spoken-response script with a consistent 6-section flow, fixed transitions, prioritization logic, and clear MVP framing.
 
