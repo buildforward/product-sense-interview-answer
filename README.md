@@ -1,6 +1,6 @@
 # Product Sense Interview
 
-A skill for answering PM product sense and product design interview questions in a structured, interview-ready format. Summarized after spending $$$ thousands of dollars in PM mock interviews and hundreds of mock questions.
+A skill for answering PM product sense and product design interview questions in a structured, interview-ready format. Summarized after spending I spent way too much paying for expensive PM mock interviews and wasting time practicing hundreds of mock questions.
 
 It turns open-ended prompts like "Design a product for X" or "How would you improve X?" into a complete spoken-response script with a consistent 6-section flow, fixed transitions, prioritization logic, and clear MVP framing.
 
@@ -69,10 +69,19 @@ See the `examples/` folder for full output scripts.
 ### Claude Cowork (recommended for non-developers)
 
 1. In Github, Download this whole repo as "zip" by clicking the green "code" button
+
+   ![Download ZIP from GitHub](instruction-screenshot/github-download.png)
+
 2. Go to Claude Cowork and open "Customize" (bottom-left)
-3. Clicke "+" next to "Personal plugins"
-4. Clicke "+ Create plugin" 
+3. Click "+" next to "Personal plugins"
+4. Click "+ Create plugin"
 5. Click "Upload plugin" and drop the zip file
+
+   ![Customize menu in Claude Cowork](instruction-screenshot/cowork-customize.png)
+
+6. Create a new task, use command "/" to pull up the skill
+
+   ![Skill command in Cowork](instruction-screenshot/cowork-skill.png)
 
 ### ChatGPT / Codex (recommended for non-developers)
 
