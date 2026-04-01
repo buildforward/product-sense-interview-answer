@@ -1,0 +1,8 @@
+{
+  "name": "product-sense-interview",
+  "description": "Generates a complete spoken-register PM interview script for product sense and product design questions, structured into 6 timed sections with built-in prioritization logic.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yuqing"
+  }
+}
