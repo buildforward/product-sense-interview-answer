@@ -1,121 +1,95 @@
-# Product Sense Interview
+# AI PM Skills
 
-A skill for answering PM product sense and product design interview questions in a structured, interview-ready format. Summarized after spending I spent way too much paying for expensive PM mock interviews and wasting time practicing hundreds of mock questions.
-
-It turns open-ended prompts like "Design a product for X" or "How would you improve X?" into a complete spoken-response script with a consistent 6-section flow, fixed transitions, prioritization logic, and clear MVP framing.
+No-slop PM skills for real product judgment. Curated list of sharp PM skills that challenge your thinking. Cover product strategy, decision-making, and career growth. Built by a staff PM with 10+ yoe.
 
 ---
 
-## What Is a Skill?
+## Skills
 
-A skill is a structured markdown file (`SKILL.md`) that teaches an AI agent how to do a specific task — the right way, every time, without you explaining your process from scratch.
-
-Instead of saying *"Answer this PM interview question"* and hoping for the best, the agent already knows:
-- How to structure the 6-section answer
-- Which prioritization frameworks to apply and when
-- What fixed transitions to use under interview pressure
-- What good looks like — and what to avoid
-
-**Skills = Less explaining. More strategic practice.**
-
----
-
-## What This Skill Does
-
-For a given product design question, the skill generates a complete spoken-answer script in 6 sections. Each section follows strong PM interview structure with prioritization logic built in.
-
-| Section | Time | What It Covers |
+| Skill | What It Does | Try It |
 |---|---|---|
-| 1. Clarification | ~2 min | Scope the problem with 2 key assumptions |
-| 2. Strategic Rationale | ~5 min | Market, company fit, competitive gap, thesis |
-| 3. Product Goal | ~2 min | North star outcome — not a feature description |
-| 4. Market Segmentation | ~5 min | Ecosystem players → dimensions → persona |
-| 5. Pain Points | ~10 min | Journey-mapped pains, ranked by frequency × severity |
-| 6. Solutions | ~15 min | 3 MECE solutions → impact/effort evaluation → MVP |
+| [Product Sense Interview](skills/product-sense-interview-answer/) | Generates a structured, spoken-register PM interview script with 6 timed sections, prioritization logic, and MVP framing | *"How would you improve YouTube?"* |
+| [Strategic Debate](skills/strategic-debate/) | Stress-tests your product decision by staging a sharp debate between two famous strategic thinkers (e.g., Jobs vs. Andreessen) | *"Debate this: should we launch a freemium tier?"* |
+| [Reddit Market Research](skills/reddit-market-research/) | Scrapes Reddit communities to surface underserved pain points, ranked by frequency and severity, with product opportunity concepts | *"Find product ideas from r/ADHD"* |
 
 ---
 
-## Example Prompts
+## Product Sense Interview Answer
 
-- "How would you improve YouTube?"
-- "Design a fire alarm for the deaf"
-- "What would you build next for DoorDash?"
-- "Build a feature for Instagram creators"
-- "How would you grow Duolingo?"
+Turns open-ended PM interview questions into a complete spoken-answer script with a consistent 6-section flow: Clarification, Strategic Rationale, Product Goal, Market Segmentation, Pain Points, and Solutions. Each section has hard word budgets, MECE lists, and fixed transitions for delivery under pressure.
 
-See the `examples/` folder for full output scripts.
+Example prompts: *"Design a fire alarm for the deaf"*, *"What would you build next for DoorDash?"*, *"How would you grow Duolingo?"*
+
+[Full details and examples](skills/product-sense-interview-answer/)
 
 ---
 
-## What Makes It Different
+## Strategic Debate
 
-- **Strong PM structure:** balances user insight with business and strategic reasoning
-- **Prioritization built in:** forces explicit tradeoffs on reach, impact, fit, frequency, severity, and effort
-- **MECE lists:** reduces overlap across segments, pain points, and solutions
-- **Spoken-answer oriented:** optimized for saying the answer out loud, not reading it
-- **Fixed transitions:** creates cleaner delivery under interview pressure
-- **Word budgets:** hard ceilings per section prevent rambling
+Takes a product decision, PRD, or strategy and stages a genuine 2-person debate between strategic thinkers from a roster of 8 personas (Musk, Jobs, Bezos, Munger, Thiel, Andreessen, Zhang Yiming, Sun Tzu). Auto-selects the sharpest pairing for your input type. Ends with a Decision Brief: where they agree, the core trade-off, and a concrete first move.
+
+Example prompts: *"Stress test my idea to add social features to a fitness app"*, *"What would Bezos and Thiel think about this pricing strategy?"*
+
+[Full details](skills/strategic-debate/)
 
 ---
 
-## How to Use This Skill
+## Reddit Market Research
 
-### Claude.ai Chat (recommended for non-developers)
+Scrapes Reddit posts and full comment trees from target subreddits, then runs a 4-pass analysis (Landscape Scan, Thematic Clustering, Deep Extraction, Scoring) to produce a ranked list of 10 underserved pain points with evidence quotes and product concepts.
 
-1. In Github, download `SKILL.md` from this repo
-2. Start a new Claude conversation and attach the file
-3. Ask your question: *"Design a product for travelers with flight anxiety"*
+Example prompts: *"Analyze r/Parenting for product opportunities"*, *"What are freelancers struggling with on Reddit?"*
 
-### Claude Cowork (recommended for non-developers)
+[Full details and examples](skills/reddit-market-research/)
 
-1. In Github, Download this whole repo as "zip" by clicking the green "code" button
+---
 
-   ![Download ZIP from GitHub](instruction-screenshot/github-download.png)
+## How to Use
 
-2. Go to Claude Cowork and open "Customize" (bottom-left)
-3. Click "+" next to "Personal plugins"
-4. Click "+ Create plugin"
-5. Click "Upload plugin" and drop the zip file
+### Claude Cowork (recommended)
 
-   ![Customize menu in Claude Cowork](instruction-screenshot/cowork-customize.png)
+1. Download this repo as a ZIP from GitHub
+2. In Claude Cowork, open **Customize** (bottom-left) → **+** next to Personal plugins → **Upload plugin**
+3. Drop the ZIP — all three skills become available via the `/` command
 
-6. Create a new task, use command "/" to pull up the skill
+### Claude.ai Chat
 
-   ![Skill command in Cowork](instruction-screenshot/cowork-skill.png)
-
-### ChatGPT / Codex (recommended for non-developers)
-
-1. Go to **My GPTs → Create a GPT**
-2. Upload `SKILL.md` under **Knowledge**
-3. In GPT instructions, add: *"Apply the Product Sense Interview skill to every product design question."*
-4. Or paste into a **ChatGPT Project** for team-wide access
+1. Download the `SKILL.md` file for the skill you want
+2. Start a new conversation and attach it
+3. Ask your question
 
 ### Claude Code (CLI)
 
 ```bash
-# Point at the skill file directly
-claude --context SKILL.md "How would you improve Spotify for college students?"
-
-# Or add to CLAUDE.md for persistent loading
-echo "- product-sense-interview/SKILL.md" >> CLAUDE.md
+claude --context skills/product-sense-interview-answer/SKILL.md "How would you improve Spotify?"
 ```
 
-### Cursor / Windsurf
+### ChatGPT / Other Platforms
+
+Each skill is a standalone markdown file (`SKILL.md`). Paste it into any system prompt, knowledge field, or `.cursorrules` file and the agent will apply the framework automatically.
+
+---
+
+## Repo Structure
 
 ```
-# Reference on demand
-@SKILL.md
-How would you improve YouTube?
-
-# Or add to .cursorrules / .windsurfrules for persistent loading
+ai-pm-skills/
+├── skills/
+│   ├── product-sense-interview-answer/   # PM interview script generator
+│   │   ├── SKILL.md
+│   │   ├── examples/
+│   │   └── README.md
+│   ├── strategic-debate/                 # Decision stress-testing via debate
+│   │   ├── SKILL.md
+│   │   └── examples/
+│   └── reddit-market-research/           # Reddit pain point discovery
+│       ├── SKILL.md
+│       ├── scripts/
+│       ├── references/
+│       └── examples/
+├── instruction-screenshot/               # Setup guide images
+└── README.md
 ```
-
-### Other Platforms (n8n, LangFlow, Make.com, Replit, Bolt, Lovable, etc.)
-
-The skill is a single markdown file. Any platform that accepts a system prompt or knowledge file can use it:
-1. Paste `SKILL.md` content into the system prompt or knowledge field
-2. Pass the interview question as user input
-3. The agent applies the 6-section framework automatically
 
 ---
 

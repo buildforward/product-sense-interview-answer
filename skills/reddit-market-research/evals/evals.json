@@ -1,0 +1,23 @@
+{
+  "skill_name": "reddit-market-research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Scrape r/ADHD and find the top pain points I could turn into a product. Focus specifically on productivity tool opportunities.",
+      "expected_output": "A ranked list of 10 pain points with scores, evidence quotes, and product concepts. Should identify things like task initiation paralysis, context-switching problems, time blindness, decision overwhelm — specific ADHD productivity gaps, not generic ADHD awareness.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want to build an AI tool for freelancers. Scrape reddit to find out what freelancers actually struggle with — don't just guess, find real pain points from the community.",
+      "expected_output": "Should auto-discover subreddits (r/freelance, r/freelanceWriters, r/upwork etc.), scrape posts+comments, then produce 10 ranked pain points. Should surface things beyond the obvious (invoicing, finding clients) — look for underserved gaps like scope creep, pricing psychology, isolation, context-switching between projects.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "analyze the sleep health space on reddit for product opportunities. Interested in tech/app solutions specifically.",
+      "expected_output": "Should discover subreddits like r/sleep, r/insomnia, r/SleepApnea. Scrape and analyze. Should identify pain points filtered through a tech/app lens. Good outputs would surface things like sleep tracking frustrations, CPAP compliance struggles, sleep hygiene habit formation gaps, circadian rhythm management.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "reddit-market-research",
+  "description": "Scrape Reddit communities to identify underserved pain points and product opportunities. Analyzes posts and comments to surface ranked insights.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yuqing"
+  }
+}

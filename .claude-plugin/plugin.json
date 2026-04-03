@@ -1,8 +1,13 @@
 {
-  "name": "product-sense-interview",
-  "description": "Generates a complete spoken-register PM interview script for product sense and product design questions, structured into 6 timed sections with built-in prioritization logic.",
+  "name": "buildforward-skills",
+  "description": "A marketplace of AI skills for product managers — interview prep, market research, strategic debate, and more.",
   "version": "1.0.0",
   "author": {
     "name": "Yuqing"
-  }
+  },
+  "skills": [
+    "skills/product-sense-interview-answer",
+    "skills/reddit-market-research",
+    "skills/strategic-debate"
+  ]
 }

@@ -1,0 +1,8 @@
+{
+  "name": "strategic-debate",
+  "description": "Stress-test product decisions, PRDs, proposals, and strategies by simulating diverse expert perspectives and structured debate.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yuqing"
+  }
+}
